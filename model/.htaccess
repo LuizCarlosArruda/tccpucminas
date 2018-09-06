@@ -1,0 +1,17 @@
+RewriteEngine On # Turn on the rewriting engine
+
+RewriteRule ^APIdadosx.php/?$ APIdadosx.php [NC,L]
+RewriteRule ^APIdadosx/([0-9]+)/?$ APIdadosx.php?id=$1 [NC,L]
+RewriteRule ^APIdadosx/(.*)$ APIdadosx.php?id=$1 [QSA]
+
+RewriteRule ^APIdados52.php/?$ APIdados52.php [NC,L]
+RewriteRule ^APIdados52/([0-9]+)/?$ APIdados52.php?id=$1 [NC,L]
+RewriteRule ^APIdados52/(.*)$ APIdados52.php?id=$1 [QSA]
+
+RewriteRule ^APIdados52a.php/?$ APIdados52a.php [NC,L]
+RewriteRule ^APIdados52a/([a-z]+)/?$ APIdados52a.php?email=$1 [NC,L]
+RewriteRule ^APIdados52a/(.*)$ APIdados52a.php?email=$1 [QSA]
+
+RewriteRule ^APIdados52b.php/?$ APIdados52b.php [NC,L]
+RewriteRule ^APIdados52b/([a-z]+)/?$ APIdados52b.php?email=$1 [NC,L]
+RewriteRule ^APIdados52b/(.*)$ APIdados52b.php?email=$1 [QSA]

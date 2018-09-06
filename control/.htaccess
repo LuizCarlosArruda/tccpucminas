@@ -1,0 +1,17 @@
+RewriteEngine On # Turn on the rewriting engine
+
+RewriteRule ^clientes.php/?$ clientes.php [NC,L]
+RewriteRule ^clientes/([0-9]+)/?$ clientes.php?id=$1 [NC,L]
+RewriteRule ^clientes/(.*)$ clientes.php?id=$1 [QSA]
+
+RewriteRule ^APIcliente100.php/?$ APIcliente100.php [NC,L]
+RewriteRule ^APIcliente100/([a-z]+)/?$ APIcliente100.php?email=$1 [NC,L]
+RewriteRule ^APIcliente100/(.*)$ APIcliente100.php?email=$1 [QSA]
+
+RewriteRule ^APIcliente101.php/?$ APIcliente101.php [NC,L]
+RewriteRule ^APIcliente101/([a-z]+)/?$ APIcliente101.php?email=$1 [NC,L]
+RewriteRule ^APIcliente101/(.*)$ APIcliente101.php?email=$1 [QSA]
+
+RewriteRule ^APIcliente102.php/?$ APIcliente102.php [NC,L]
+RewriteRule ^APIcliente102/([a-z]+)/?$ APIcliente102.php?email=$1 [NC,L]
+RewriteRule ^APIcliente102/(.*)$ APIcliente102.php?email=$1 [QSA]
